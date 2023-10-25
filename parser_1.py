@@ -33,3 +33,6 @@ while page <= page_limit:
             
 
 print(list_proxy)
+
+def get_proxy(page_limit, url,):
+    pass
