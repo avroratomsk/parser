@@ -15,11 +15,12 @@ headers = {
 urls = [
     f"http://free-proxy.cz/en/proxylist/country/RU/all/ping/all/{page}",
     f"https://www.proxydocker.com/ru/proxylist/country/Russia",
+    f"https://proxy-tools.com/proxy/ru?page={page}",
 ]
 
 
 driver = webdriver.Firefox()
-driver.get("https://proxy-tools.com/proxy/ru?page=1")
+driver.get("https://www.proxydocker.com/ru/proxylist/country/Russia")
 
 # Wait for the JavaScript to load
 time.sleep(5)
@@ -28,12 +29,16 @@ time.sleep(5)
 soup = BeautifulSoup(driver.page_source, "html.parser")
 
 # Extract the data
-table = soup.find(
-    "table", attrs={"id": "table table-sm table-responsive-md table-hover"}
-)
+table = soup.find("table")
+
+# table = soup.find(
+#     "table", attrs={"class": "table table-sm table-responsive-md table-hover"}
+# )
 
 data = []
-for row in table.find_all("tbody"):
+table_body = table.find("tbody")
+# driver.find_element_by_class_name("badge badge-primary").click()
+for row in table_body.find_all("tr"):
     data.append([cell.text for cell in row.find_all("td")])
 
 # Close the browser

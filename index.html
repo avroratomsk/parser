@@ -60,4 +60,25 @@
     </td>
 </tr>  
 
-function showPlain(){if(""===document.getElementById("zkzk").innerHTML){document.getElementById("clickexport").style.backgroundColor="#CAFFFF";for(var e=document.getElementById("proxy_list"),t=[],a=1,o=e.rows.length;o>a;a++)void 0!==e.rows[a].cells[1]&&(aab=e.rows[a].cells[0].innerText||e.rows[a].cells[0].textContent,aac=e.rows[a].cells[1].innerText||e.rows[a].cells[1].textContent,aax=aab.split("))")[1],aaq=aac.split("))")[1],void 0===aax&&(aax=aab),void 0===aaq&&(aaq=aac),aad=aax.trim()+":"+aaq.trim(),t.push(aad));var n=document.getElementById("zkzk");n.innerHTML=t.join("<br>"),n.style.cssText="z-index:100;margin-left:300px;margin-bottom:10px;margin-top:-400px;background-color:yellow;padding:13px;border:1px solid #000;width:120px;position:absolute;"}else{var n=document.getElementById("zkzk");n.innerHTML="",n.style.cssText="",document.getElementById("clickexport").style.backgroundColor="yellow"}}
+function showPlain() {
+	if("" === document.getElementById("zkzk").innerHTML) {
+		document.getElementById("clickexport").style.backgroundColor = "#CAFFFF";
+		for(var e = document.getElementById("proxy_list"), t = [], a = 1, o = e.rows.length; o > a; a++) void 0 !== e.rows[a].cells[1] && (aab = e.rows[a].cells[0].innerText || e.rows[a].cells[0].textContent, aac = e.rows[a].cells[1].innerText || e.rows[a].cells[1].textContent, aax = aab.split("))")[1], aaq = aac.split("))")[1], void 0 === aax && (aax = aab), void 0 === aaq && (aaq = aac), aad = aax.trim() + ":" + aaq.trim(), t.push(aad));
+		var n = document.getElementById("zkzk");
+		n.innerHTML = t.join("<br>"), n.style.cssText = "z-index:100;margin-left:300px;margin-bottom:10px;margin-top:-400px;background-color:yellow;padding:13px;border:1px solid #000;width:120px;position:absolute;"
+	} else {
+		var n = document.getElementById("zkzk");
+		n.innerHTML = "", n.style.cssText = "", document.getElementById("clickexport").style.backgroundColor = "yellow"
+	}
+}
+
+[
+    '91.103.208.101', 
+    'SOCKS4', 
+    'Elite', 
+    'Moscow', 
+    '10%', 
+    'Slow', 
+    '0.26 sec.', 
+    '4m ago'
+    ],

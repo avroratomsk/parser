@@ -12,13 +12,11 @@ headers = {
 }
 
 urls = [
-    # f"https://www.freeproxy.world/?type=&anonymity=&country=RU&speed=&port=&page={page}",  # Работает
-    # f"https://proxyhub.me/en/ru-http-proxy-list.html",  # Работает
-    # f"https://freeproxylist.cc/online/Russia/",  # Работает
-    # f"https://proxy-tools.com/proxy/ru?page={page}", # - Ajax
-    # f"https://freeproxyupdate.com/russia-ru",  # Работает
-    # f"http://free-proxy.cz/en/proxylist/country/RU/all/ping/all/",
-    # f"https://hidemy.io/ru/proxy-list/countries/russian-federation/",  # Работает
+    f"https://www.freeproxy.world/?type=&anonymity=&country=RU&speed=&port=&page={page}",  # Работает
+    f"https://proxyhub.me/en/ru-http-proxy-list.html",  # Работает
+    f"https://freeproxylist.cc/online/Russia/",  # Работает
+    f"https://freeproxyupdate.com/russia-ru",  # Работает
+    f"https://hidemy.io/ru/proxy-list/countries/russian-federation/",  # Работает
 ]
 
 
